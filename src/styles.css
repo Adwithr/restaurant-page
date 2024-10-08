@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::before,
@@ -15,6 +16,9 @@ body {
   grid-template-rows: auto 1fr;
   &::-webkit-scrollbar {
     display: none;
+  }
+  ::selection {
+    background-color: #90827d;
   }
 }
 
@@ -62,6 +66,57 @@ nav > button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -3em;
+}
+
+#home-page-txt {
+  position: relative;
+  top: 6.5em;
+  left: 4.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+#home-page-main-txt {
+  font-size: 3.65em;
+  font-weight: 560;
+  font-family: "Barlow", sans-serif;
+  color: #fff6dd;
+  /* color: #f5e0c3; */
+  line-height: 1;
+}
+
+#home-page-info-txt {
+  font-family: "Lato", sans-serif;
+  font-size: 17.7px;
+  font-weight: 600;
+  /* color: #f1e1b6; */
+  color: #e5d4c3;
+}
+
+#home-page-content-btns {
+  display: flex;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+#home-page-content-btns > button {
+  font-family: "Lato", sans-serif;
+  background-color: #51372f;
+  border: none;
+  color: #fff6dd;
+  font-size: 15.5px;
+  padding: 0.6em 0.9em;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: hsl(14, 27%, 28%);
+    color: #edbd8c;
+  }
+  &:active {
+    background-color: #51372f;
+    color: #e5d4c3;
+  }
 }
 
 .current-page {

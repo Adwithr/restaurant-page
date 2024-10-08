@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div id="hdr-txt">The Beanery</div>
-      <nav>
-        <button class="home-nav">HOME</button>
-        <button class="menu-nav">MENU</button>
-        <button class="about-nav">ABOUT</button>
-      </nav>
-    </header>
-    <div id="content">
-      <!-- <div id="home-page">
+export function homePage() {
+  const content = document.querySelector("#content");
+  content.innerHTML = `
+  <div id="home-page">
         <div id="home-page-txt">
           <div id="home-page-main-txt">
             Crafted with Care,<br />
@@ -31,7 +17,5 @@
             <button class="about-nav">LEARN MORE</button>
           </div>
         </div>
-      </div> -->
-    </div>
-  </body>
-</html>
+      </div>`;
+}
