@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 *::before,
@@ -72,9 +74,11 @@ nav > button {
 }
 
 #home-page-txt {
-  position: relative;
-  top: 6.5em;
-  left: 4.5em;
+  /* position: relative; */
+  /* top: 6.5em;
+  left: 4.5em; */
+  margin-top: 6.5em;
+  margin-left: 4.5em;
   display: flex;
   flex-direction: column;
   gap: 0.8em;
@@ -123,14 +127,16 @@ nav > button {
   }
 }
 
-#about-page {
+#about-page,
+#menu-page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#about-hdr {
-  font-family: "Barlow", sans-serif;
+#about-hdr,
+#menu-hdr {
+  font-family: "Raleway", sans-serif;
   color: #ffefd5;
   margin-top: 0.5em;
   margin-bottom: 0.6em;
@@ -158,6 +164,65 @@ nav > button {
   font-size: 21px;
   font-weight: bold;
   color: #e6d7be;
+}
+
+#menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 75vh;
+  gap: 0.5em;
+  padding: 2.5em 3em 2em 3em;
+  background-color: rgba(42, 28, 18, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1.4px solid rgba(245, 224, 195, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 3px 7px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#menu-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+#menu-content::-webkit-scrollbar-thumb {
+  background-color: #e6d7be;
+  border-radius: 10px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-name {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  font-size: 22.5px;
+  color: #fff6dd;
+}
+
+.item-info {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  color: #e6d7be;
+  font-size: 16.5px;
+}
+
+.item-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffefd5;
+  display: flex;
+  align-items: flex-end;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #ffefd5;
 }
 
 .current-page {
