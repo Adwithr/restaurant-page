@@ -64,19 +64,13 @@ nav > button {
 }
 
 #content {
-  /* height: 100vh;
-  width: 100vw; */
   background-image: url(./images/coffeebgimg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -3em;
-  /* background-attachment: fixed; */
 }
 
 #home-page-txt {
-  /* position: relative; */
-  /* top: 6.5em;
-  left: 4.5em; */
   margin-top: 6.5em;
   margin-left: 4.5em;
   display: flex;
@@ -90,7 +84,6 @@ nav > button {
   font-weight: 560;
   font-family: "Barlow", sans-serif;
   color: #fff6dd;
-  /* color: #f5e0c3; */
   line-height: 1;
 }
 
@@ -98,7 +91,6 @@ nav > button {
   font-family: "Lato", sans-serif;
   font-size: 17.7px;
   font-weight: 600;
-  /* color: #f1e1b6; */
   color: #e5d4c3;
 }
 
