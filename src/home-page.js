@@ -13,8 +13,8 @@ export function homePage() {
             offering an unforgettable coffee experience.
           </div>
           <div id="home-page-content-btns">
-            <button class="menu-nav">MENU</button>
-            <button class="about-nav">LEARN MORE</button>
+            <button class="menu-nav-btn">MENU</button>
+            <button class="about-nav-btn">LEARN MORE</button>
           </div>
         </div>
       </div>`;

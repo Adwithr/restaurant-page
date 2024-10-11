@@ -157,6 +157,8 @@ nav > button {
   border-radius: 20px;
   border: 1.4px solid rgba(245, 224, 195, 0.8);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 3px 7px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #about-content > p {
@@ -182,11 +184,13 @@ nav > button {
   overflow-x: hidden;
 }
 
-#menu-content::-webkit-scrollbar {
+#menu-content::-webkit-scrollbar,
+#about-content::-webkit-scrollbar {
   width: 7px;
 }
 
-#menu-content::-webkit-scrollbar-thumb {
+#menu-content::-webkit-scrollbar-thumb,
+#about-content::-webkit-scrollbar-thumb {
   background-color: #e6d7be;
   border-radius: 10px;
 }
