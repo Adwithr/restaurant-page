@@ -1,7 +1,7 @@
 import "./styles.css";
-import { homePage } from "./home-page";
-import { aboutPage } from "./about-page";
-import { menuPage } from "./menu-page";
+import { homePage } from "./components/home-page";
+import { aboutPage } from "./components/about-page";
+import { menuPage } from "./components/menu-page";
 
 homePage();
 
